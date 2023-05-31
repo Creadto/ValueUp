@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "996669819566",
+    "firebase_url": "https://valueup-2e010-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "valueup-2e010",
+    "storage_bucket": "valueup-2e010.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996669819566:android:5bf286edc31522bcb37b3f",
+        "android_client_info": {
+          "package_name": "com.example.value_up"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzFmImM4j6497zgsHCsY9l2HrBEd0wCPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
