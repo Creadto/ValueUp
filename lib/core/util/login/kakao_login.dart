@@ -16,12 +16,16 @@ class KakaoLogin implements SocialLogin {
       } else {
         try {
           await UserApi.instance.loginWithKakaoAccount();
+          print("login 성공");
           return true;
         } catch (e) {
+          print("login 실패(1)");
+          print(e);
           return false;
         }
       }
     } catch (e) {
+      print("login 실패2");
       return false;
     }
   }

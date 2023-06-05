@@ -8,8 +8,8 @@ import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  KakaoSdk.init(nativeAppKey: '763de5e3c380997b666de9c77e9238bc');
   await dotenv.load(fileName: ".env");
+  KakaoSdk.init(nativeAppKey: dotenv.env['KAKAO_NATIVE_KEY']);
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
