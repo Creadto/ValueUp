@@ -55,8 +55,6 @@ class _HomeViewState extends State<HomeView> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance
-        .addPostFrameCallback((_) => ProfileAlertDialog(context: context));
     if (HomeView.isProfileDone == false) {
       WidgetsBinding.instance
           .addPostFrameCallback((_) => ProfileAlertDialog(context: context));

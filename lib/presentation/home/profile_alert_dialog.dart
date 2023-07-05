@@ -3,23 +3,13 @@ import 'package:value_up/core/resource/palette.dart';
 import 'package:value_up/presentation/home/home_view.dart';
 import 'package:value_up/presentation/profile/profile_basic_info_view.dart';
 
-class ProfileAlertDialog extends StatefulWidget {
+class ProfileAlertDialog {
   ProfileAlertDialog({
-    super.key,
     required this.context,
-  });
-
-  final BuildContext context;
-
-  @override
-  State<ProfileAlertDialog> createState() => _ProfileAlertDialogState();
-}
-
-class _ProfileAlertDialogState extends State<ProfileAlertDialog> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
+  }) {
+    showProfileAlertDialog(context);
   }
+  final BuildContext context;
 
   Future showProfileAlertDialog(BuildContext context) {
     return showDialog(
@@ -69,9 +59,8 @@ class _ProfileAlertDialogState extends State<ProfileAlertDialog> {
                       backgroundColor: Palette.valueRed),
                   child: const Text('좋은 사람 추천을 위한 프로필 완성하기!'),
                   onPressed: () {
-                    setState(() {
-                      HomeView.isProfileDone = true;
-                    });
+                    HomeView.isProfileDone = true;
+                    Navigator.of(context).pop();
                     Navigator.push(
                       context,
                       MaterialPageRoute(
