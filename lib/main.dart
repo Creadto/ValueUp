@@ -21,10 +21,11 @@ void main() async {
 
 class Gachiga extends StatelessWidget {
   const Gachiga({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-      return MaterialApp(
-      routes:{
+    return MaterialApp(
+      routes: {
         '/HomeView': (_) => const HomeView(),
       },
       title: 'gachiga app',
@@ -43,3 +44,4 @@ class Gachiga extends StatelessWidget {
       home: LoginView(),
     );
   }
+}
