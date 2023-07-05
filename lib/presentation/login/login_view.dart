@@ -11,8 +11,6 @@ class LoginView extends StatefulWidget {
 }
 
 class _LoginView extends State<LoginView> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +21,7 @@ class _LoginView extends State<LoginView> {
 
   /// login view UI setup
   /// login & sign up widget
-  Widget getBodyWidget()  {
+  Widget getBodyWidget() {
     return Stack(
       children: [
         // background image setting
@@ -35,13 +33,15 @@ class _LoginView extends State<LoginView> {
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage('assets/image/landing_page.png'), fit: BoxFit.fill),
+                  image: AssetImage('assets/images/landing_page.png'),
+                  fit: BoxFit.fill),
             ),
           ),
         ),
+
         /// login with KAKAO & google BUTTON UI
         Positioned(
-          top: MediaQuery.of(context).size.height/3*2,
+          top: MediaQuery.of(context).size.height / 3 * 2,
           right: 0,
           left: 0,
           child: Column(
@@ -52,15 +52,14 @@ class _LoginView extends State<LoginView> {
               ),
               TextButton.icon(
                 style: TextButton.styleFrom(
-                    foregroundColor: Colors.black, minimumSize: Size(250, 40),
+                    foregroundColor: Colors.black,
+                    minimumSize: Size(250, 40),
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20)
-                    ),
-                    backgroundColor: Palette.kakaoYellow
-                ),
+                        borderRadius: BorderRadius.circular(20)),
+                    backgroundColor: Palette.kakaoYellow),
                 icon: Icon(CustomIcon.kakaotalk),
                 label: Text(' Kakao로 시작하기'),
-                onPressed: (){
+                onPressed: () {
                   //loginWithKakao();
                   Navigator.push(
                     context,
@@ -74,17 +73,14 @@ class _LoginView extends State<LoginView> {
               ),
               TextButton.icon(
                 style: TextButton.styleFrom(
-                    foregroundColor: Colors.white, minimumSize: Size(250, 40),
+                    foregroundColor: Colors.white,
+                    minimumSize: Size(250, 40),
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20)
-                    ),
-                    backgroundColor: Palette.valueRed
-                ),
+                        borderRadius: BorderRadius.circular(20)),
+                    backgroundColor: Palette.valueRed),
                 icon: Icon(CustomIcon.gplus),
                 label: Text('  Google로 시작하기'),
-                onPressed: (){
-
-                },
+                onPressed: () {},
               ),
             ],
           ),

@@ -23,14 +23,12 @@ class Gachiga extends StatelessWidget {
   const Gachiga({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-      return MaterialApp(
-      routes:{
+    return MaterialApp(
+      routes: {
         '/HomeView': (_) => const HomeView(),
       },
       title: 'gachiga app',
-      theme: ThemeData(
-          primarySwatch: Colors.blue
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
@@ -43,3 +41,4 @@ class Gachiga extends StatelessWidget {
       home: LoginView(),
     );
   }
+}

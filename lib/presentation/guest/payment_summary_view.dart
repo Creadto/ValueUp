@@ -57,7 +57,7 @@ class _PaymentSummaryView extends State<PaymentSummaryView> {
                   ClipRRect(
                     borderRadius: BorderRadius.all(Radius.circular(5.0)),
                     child: Image.asset(
-                      'assets/image/landing_page.png',
+                      'assets/images/landing_page.png',
                       width: 70,
                       height: 70,
                       fit: BoxFit.fill,

@@ -31,7 +31,7 @@ class ChatBubbles extends StatelessWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
-                          image: AssetImage('assets/image/female.jpg'),
+                          image: AssetImage('assets/images/female.jpg'),
                           fit: BoxFit.fitHeight),
                     ),
                   ),

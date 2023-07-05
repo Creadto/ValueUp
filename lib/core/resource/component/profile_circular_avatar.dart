@@ -14,8 +14,7 @@ class ProfileCircleAvatar extends StatefulWidget {
 }
 
 class _ProfileCircleAvatarState extends State<ProfileCircleAvatar> {
-
-  final AssetImage _image = AssetImage('assets/image/female_2.png');
+  final AssetImage _image = AssetImage('assets/images/female_2.png');
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -39,9 +38,7 @@ class _ProfileCircleAvatarState extends State<ProfileCircleAvatar> {
           ),
           shape: BoxShape.circle,
           color: Palette.valueWhite,
-          image: DecorationImage(
-              image: _image,
-              fit: BoxFit.fitHeight),
+          image: DecorationImage(image: _image, fit: BoxFit.fitHeight),
         ),
       ),
     );

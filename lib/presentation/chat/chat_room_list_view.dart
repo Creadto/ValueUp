@@ -59,7 +59,7 @@ class _ChatRoomListViewState extends State<ChatRoomListView> {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
                       child: Image(
-                        image: AssetImage('assets/image/landing_page.png'),
+                        image: AssetImage('assets/images/landing_page.png'),
                         fit: BoxFit.cover,
                       ),
                     ),

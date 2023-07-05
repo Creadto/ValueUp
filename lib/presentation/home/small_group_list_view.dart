@@ -48,7 +48,7 @@ class _SmallGroupListViewState extends State<SmallGroupListView> {
                 ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   child: Image.asset(
-                    'assets/image/landing_page.png',
+                    'assets/images/landing_page.png',
                     width: 100,
                     height: 100,
                     fit: BoxFit.fill,
@@ -109,24 +109,24 @@ class _SmallGroupListViewState extends State<SmallGroupListView> {
                               width: 20,
                               height: 20,
                               child: CircleAvatar(
-                                backgroundImage:
-                                AssetImage('assets/image/landing_page.png'),
+                                backgroundImage: AssetImage(
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                             SizedBox(
                               width: 20,
                               height: 20,
                               child: CircleAvatar(
-                                backgroundImage:
-                                AssetImage('assets/image/landing_page.png'),
+                                backgroundImage: AssetImage(
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                             SizedBox(
                               width: 20,
                               height: 20,
                               child: CircleAvatar(
-                                backgroundImage:
-                                AssetImage('assets/image/landing_page.png'),
+                                backgroundImage: AssetImage(
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                           ],
@@ -148,24 +148,24 @@ class _SmallGroupListViewState extends State<SmallGroupListView> {
                               width: 20,
                               height: 20,
                               child: CircleAvatar(
-                                backgroundImage:
-                                AssetImage('assets/image/landing_page.png'),
+                                backgroundImage: AssetImage(
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                             SizedBox(
                               width: 20,
                               height: 20,
                               child: CircleAvatar(
-                                backgroundImage:
-                                AssetImage('assets/image/landing_page.png'),
+                                backgroundImage: AssetImage(
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                             SizedBox(
                               width: 20,
                               height: 20,
                               child: CircleAvatar(
-                                backgroundImage:
-                                AssetImage('assets/image/landing_page.png'),
+                                backgroundImage: AssetImage(
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                           ],

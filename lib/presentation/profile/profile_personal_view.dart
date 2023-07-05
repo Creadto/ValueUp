@@ -3,7 +3,6 @@ import 'package:value_up/core/resource/component/profile_circular_avatar.dart';
 import 'package:value_up/core/resource/palette.dart';
 import 'package:value_up/presentation/home/small_group_detail_view.dart';
 
-
 class ProfilePersonalView extends StatefulWidget {
   const ProfilePersonalView({Key? key}) : super(key: key);
 
@@ -179,8 +178,7 @@ class _ProfilePersonalViewState extends State<ProfilePersonalView> {
                         color: Colors.black,
                       ),
                     ),
-                    onPressed: () {
-                    },
+                    onPressed: () {},
                   ),
                 ],
               ),
@@ -261,9 +259,7 @@ class _ProfilePersonalViewState extends State<ProfilePersonalView> {
               // second tab bar view widget
               Container(
                 color: Colors.white,
-                child: Center(
-                  child: getMeetingList()
-                ),
+                child: Center(child: getMeetingList()),
               ),
             ],
           ),
@@ -271,10 +267,10 @@ class _ProfilePersonalViewState extends State<ProfilePersonalView> {
       ],
     );
   }
-  Widget getProfileDetail()
-  {
+
+  Widget getProfileDetail() {
     return SizedBox(
-      width: MediaQuery.of(context).size.width-40,
+      width: MediaQuery.of(context).size.width - 40,
       child: Column(
         children: [
           Row(
@@ -386,7 +382,6 @@ class _ProfilePersonalViewState extends State<ProfilePersonalView> {
               getRoundRectangleButton('액티비티', 70, 20),
               getRoundRectangleButton('자기개발', 70, 20),
               getRoundRectangleButton('친목', 50, 20),
-
             ],
           ),
           Row(
@@ -431,7 +426,6 @@ class _ProfilePersonalViewState extends State<ProfilePersonalView> {
             children: [
               getRoundRectangleButton('한국어', 60, 20),
               getRoundRectangleButton('영어', 50, 20),
-
             ],
           ),
           Divider(
@@ -445,8 +439,9 @@ class _ProfilePersonalViewState extends State<ProfilePersonalView> {
       ),
     );
   }
-  Widget getRoundRectangleButton(String textTitle, double width, double height)
-  {
+
+  Widget getRoundRectangleButton(
+      String textTitle, double width, double height) {
     return TextButton(
       style: TextButton.styleFrom(
           foregroundColor: Colors.black,
@@ -465,8 +460,8 @@ class _ProfilePersonalViewState extends State<ProfilePersonalView> {
       onPressed: () {},
     );
   }
-  Widget getMeetingList()
-  {
+
+  Widget getMeetingList() {
     return ListView.separated(
       padding: EdgeInsets.symmetric(horizontal: 15),
       physics: ClampingScrollPhysics(),
@@ -564,7 +559,7 @@ class _ProfilePersonalViewState extends State<ProfilePersonalView> {
                               height: 20,
                               child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                                    'assets/image/landing_page.png'),
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                             SizedBox(
@@ -572,7 +567,7 @@ class _ProfilePersonalViewState extends State<ProfilePersonalView> {
                               height: 20,
                               child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                                    'assets/image/landing_page.png'),
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                             SizedBox(
@@ -580,7 +575,7 @@ class _ProfilePersonalViewState extends State<ProfilePersonalView> {
                               height: 20,
                               child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                                    'assets/image/landing_page.png'),
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                           ],
@@ -603,7 +598,7 @@ class _ProfilePersonalViewState extends State<ProfilePersonalView> {
                               height: 20,
                               child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                                    'assets/image/landing_page.png'),
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                             SizedBox(
@@ -611,7 +606,7 @@ class _ProfilePersonalViewState extends State<ProfilePersonalView> {
                               height: 20,
                               child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                                    'assets/image/landing_page.png'),
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                             SizedBox(
@@ -619,7 +614,7 @@ class _ProfilePersonalViewState extends State<ProfilePersonalView> {
                               height: 20,
                               child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                                    'assets/image/landing_page.png'),
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                           ],
