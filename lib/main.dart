@@ -29,9 +29,7 @@ class Gachiga extends StatelessWidget {
         '/HomeView': (_) => const HomeView(),
       },
       title: 'gachiga app',
-      theme: ThemeData(
-          primarySwatch: Colors.blue
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,

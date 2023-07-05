@@ -39,8 +39,8 @@ class _ProfilePhotoState extends State<ProfilePhoto> {
       body: getBodyWidget(),
     );
   }
-  Widget getBodyWidget()
-  {
+
+  Widget getBodyWidget() {
     return Stack(
       children: [
         //배경
@@ -71,13 +71,11 @@ class _ProfilePhotoState extends State<ProfilePhoto> {
                 elevation: 0.5,
                 padding: EdgeInsets.all(15.0),
                 shape: CircleBorder(
-                    side: BorderSide(width: 1, color: Colors.black)
-                ),
+                    side: BorderSide(width: 1, color: Colors.black)),
                 fillColor: Colors.white,
                 child: Image(
-                    image: AssetImage('assets/image/add_profile.png'),
-                    fit: BoxFit.fill
-                ),
+                    image: AssetImage('assets/images/add_profile.png'),
+                    fit: BoxFit.fill),
                 onPressed: () {},
               ),
               SizedBox(
@@ -95,7 +93,7 @@ class _ProfilePhotoState extends State<ProfilePhoto> {
                       child: OutlinedButton(
                         onPressed: () {},
                         child: Image(
-                            image: AssetImage('assets/image/add_profile.png'),
+                            image: AssetImage('assets/images/add_profile.png'),
                             fit: BoxFit.fill),
                       ),
                     ),
@@ -108,7 +106,7 @@ class _ProfilePhotoState extends State<ProfilePhoto> {
                       child: OutlinedButton(
                         onPressed: () {},
                         child: Image(
-                            image: AssetImage('assets/image/add_profile.png'),
+                            image: AssetImage('assets/images/add_profile.png'),
                             fit: BoxFit.fill),
                       ),
                     ),
@@ -121,7 +119,7 @@ class _ProfilePhotoState extends State<ProfilePhoto> {
                       child: OutlinedButton(
                         onPressed: () {},
                         child: Image(
-                            image: AssetImage('assets/image/add_profile.png'),
+                            image: AssetImage('assets/images/add_profile.png'),
                             fit: BoxFit.fill),
                       ),
                     ),
@@ -143,7 +141,7 @@ class _ProfilePhotoState extends State<ProfilePhoto> {
                       child: OutlinedButton(
                         onPressed: () {},
                         child: Image(
-                            image: AssetImage('assets/image/add_profile.png'),
+                            image: AssetImage('assets/images/add_profile.png'),
                             fit: BoxFit.fill),
                       ),
                     ),
@@ -156,7 +154,7 @@ class _ProfilePhotoState extends State<ProfilePhoto> {
                       child: OutlinedButton(
                         onPressed: () {},
                         child: Image(
-                            image: AssetImage('assets/image/add_profile.png'),
+                            image: AssetImage('assets/images/add_profile.png'),
                             fit: BoxFit.fill),
                       ),
                     ),
@@ -169,7 +167,7 @@ class _ProfilePhotoState extends State<ProfilePhoto> {
                       child: OutlinedButton(
                         onPressed: () {},
                         child: Image(
-                            image: AssetImage('assets/image/add_profile.png'),
+                            image: AssetImage('assets/images/add_profile.png'),
                             fit: BoxFit.fill),
                       ),
                     ),
@@ -188,7 +186,8 @@ class _ProfilePhotoState extends State<ProfilePhoto> {
                     backgroundColor: Palette.valueRed),
                 child: const Text('다음으로'),
                 onPressed: () {
-                  Navigator.popUntil(context, ModalRoute.withName(HomeView.routeName));
+                  Navigator.popUntil(
+                      context, ModalRoute.withName(HomeView.routeName));
                 },
               ),
             ],

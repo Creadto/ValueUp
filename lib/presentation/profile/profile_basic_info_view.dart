@@ -174,7 +174,7 @@ class _ProfileEditState extends State<ProfileEdit> {
                               onPressed: () {},
                               child: Image(
                                   image: AssetImage(
-                                      'assets/image/add_profile.png'),
+                                      'assets/images/add_profile.png'),
                                   fit: BoxFit.fill),
                             ),
                           ),
@@ -198,7 +198,7 @@ class _ProfileEditState extends State<ProfileEdit> {
                               onPressed: () {},
                               child: Image(
                                   image: AssetImage(
-                                      'assets/image/add_profile.png'),
+                                      'assets/images/add_profile.png'),
                                   fit: BoxFit.fill),
                             ),
                           ),
@@ -222,7 +222,7 @@ class _ProfileEditState extends State<ProfileEdit> {
                               onPressed: () {},
                               child: Image(
                                   image: AssetImage(
-                                      'assets/image/add_profile.png'),
+                                      'assets/images/add_profile.png'),
                                   fit: BoxFit.fill),
                             ),
                           ),
@@ -244,7 +244,7 @@ class _ProfileEditState extends State<ProfileEdit> {
                             )),
                       ),
                       SizedBox(
-                        width: MediaQuery.of(context).size.width/2,
+                        width: MediaQuery.of(context).size.width / 2,
                         child: TextField(
                           controller: _company,
                         ),
@@ -264,7 +264,7 @@ class _ProfileEditState extends State<ProfileEdit> {
                           )),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width/2,
+                      width: MediaQuery.of(context).size.width / 2,
                       child: TextField(
                         controller: _jobPosition,
                       ),

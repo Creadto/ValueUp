@@ -574,7 +574,7 @@ class _ProfileVisitorViewState extends State<ProfileVisitorView> {
                 ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   child: Image.asset(
-                    'assets/image/landing_page.png',
+                    'assets/images/landing_page.png',
                     width: 100,
                     height: 100,
                     fit: BoxFit.fill,
@@ -635,24 +635,24 @@ class _ProfileVisitorViewState extends State<ProfileVisitorView> {
                               width: 20,
                               height: 20,
                               child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/image/landing_page.png'),
+                                backgroundImage: AssetImage(
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                             SizedBox(
                               width: 20,
                               height: 20,
                               child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/image/landing_page.png'),
+                                backgroundImage: AssetImage(
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                             SizedBox(
                               width: 20,
                               height: 20,
                               child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/image/landing_page.png'),
+                                backgroundImage: AssetImage(
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                           ],
@@ -674,24 +674,24 @@ class _ProfileVisitorViewState extends State<ProfileVisitorView> {
                               width: 20,
                               height: 20,
                               child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/image/landing_page.png'),
+                                backgroundImage: AssetImage(
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                             SizedBox(
                               width: 20,
                               height: 20,
                               child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/image/landing_page.png'),
+                                backgroundImage: AssetImage(
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                             SizedBox(
                               width: 20,
                               height: 20,
                               child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/image/landing_page.png'),
+                                backgroundImage: AssetImage(
+                                    'assets/images/landing_page.png'),
                               ),
                             ),
                           ],
@@ -723,8 +723,8 @@ class _ProfileVisitorViewState extends State<ProfileVisitorView> {
       },
     );
   }
-  Future<void> showReportBottomSheet()
-  {
+
+  Future<void> showReportBottomSheet() {
     return showAdaptiveActionSheet(
       context: context,
       title: const Text('사용자 프로필 메뉴'),
@@ -733,7 +733,9 @@ class _ProfileVisitorViewState extends State<ProfileVisitorView> {
         BottomSheetAction(title: const Text('신고하기'), onPressed: (context) {}),
         BottomSheetAction(title: const Text('차단하기'), onPressed: (context) {}),
       ],
-      cancelAction: CancelAction(title: const Text('Cancel')),// onPressed parameter is optional by default will dismiss the ActionSheet
+      cancelAction: CancelAction(
+          title: const Text(
+              'Cancel')), // onPressed parameter is optional by default will dismiss the ActionSheet
     );
   }
 }

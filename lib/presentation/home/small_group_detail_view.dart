@@ -65,7 +65,7 @@ class _SmallRoomView extends State<SmallGroupDetailView> {
               child: ClipRRect(
                 borderRadius: BorderRadius.all(Radius.circular(5.0)),
                 child: Image.asset(
-                  'assets/image/landing_page.png',
+                  'assets/images/landing_page.png',
                   width: 100,
                   height: 100,
                   fit: BoxFit.fill,
@@ -100,9 +100,7 @@ class _SmallRoomView extends State<SmallGroupDetailView> {
                       color: Colors.white,
                     ),
                   ),
-                  onPressed: () {
-
-                  },
+                  onPressed: () {},
                 ),
                 TextButton(
                   style: TextButton.styleFrom(
@@ -123,9 +121,7 @@ class _SmallRoomView extends State<SmallGroupDetailView> {
                       color: Colors.white,
                     ),
                   ),
-                  onPressed: () {
-
-                  },
+                  onPressed: () {},
                 ),
                 if (isHost) ...[
                   TextButton(
@@ -245,7 +241,9 @@ class _SmallRoomView extends State<SmallGroupDetailView> {
             top: 150,
             right: 0,
             left: 0,
-            child: ProfileCircleAvatar(radius: 90,),
+            child: ProfileCircleAvatar(
+              radius: 90,
+            ),
           ),
           Positioned(
             top: 350,
@@ -267,8 +265,7 @@ class _SmallRoomView extends State<SmallGroupDetailView> {
                           style: TextStyle(
                               fontSize: 14,
                               color: Colors.black,
-                              fontWeight: FontWeight.w500
-                          ),
+                              fontWeight: FontWeight.w500),
                         ),
                         SizedBox(height: 5, width: 40),
                         Icon(Icons.calendar_month_outlined),
@@ -304,7 +301,7 @@ class _SmallRoomView extends State<SmallGroupDetailView> {
                             height: 20,
                             child: CircleAvatar(
                               backgroundImage:
-                                  AssetImage('assets/image/landing_page.png'),
+                                  AssetImage('assets/images/landing_page.png'),
                             ),
                           ),
                           SizedBox(
@@ -312,7 +309,7 @@ class _SmallRoomView extends State<SmallGroupDetailView> {
                             height: 20,
                             child: CircleAvatar(
                               backgroundImage:
-                                  AssetImage('assets/image/landing_page.png'),
+                                  AssetImage('assets/images/landing_page.png'),
                             ),
                           ),
                           SizedBox(
@@ -320,7 +317,7 @@ class _SmallRoomView extends State<SmallGroupDetailView> {
                             height: 20,
                             child: CircleAvatar(
                               backgroundImage:
-                                  AssetImage('assets/image/landing_page.png'),
+                                  AssetImage('assets/images/landing_page.png'),
                             ),
                           ),
                         ],
@@ -348,7 +345,7 @@ class _SmallRoomView extends State<SmallGroupDetailView> {
                             height: 20,
                             child: CircleAvatar(
                               backgroundImage:
-                                  AssetImage('assets/image/landing_page.png'),
+                                  AssetImage('assets/images/landing_page.png'),
                             ),
                           ),
                           SizedBox(
@@ -356,7 +353,7 @@ class _SmallRoomView extends State<SmallGroupDetailView> {
                             height: 20,
                             child: CircleAvatar(
                               backgroundImage:
-                                  AssetImage('assets/image/landing_page.png'),
+                                  AssetImage('assets/images/landing_page.png'),
                             ),
                           ),
                           SizedBox(
@@ -364,7 +361,7 @@ class _SmallRoomView extends State<SmallGroupDetailView> {
                             height: 20,
                             child: CircleAvatar(
                               backgroundImage:
-                                  AssetImage('assets/image/landing_page.png'),
+                                  AssetImage('assets/images/landing_page.png'),
                             ),
                           ),
                         ],
@@ -471,8 +468,8 @@ class _SmallRoomView extends State<SmallGroupDetailView> {
       ),
     );
   }
-  Future<void> showReportBottomSheet()
-  {
+
+  Future<void> showReportBottomSheet() {
     return showAdaptiveActionSheet(
       context: context,
       title: const Text('소모임 메뉴'),
@@ -480,7 +477,9 @@ class _SmallRoomView extends State<SmallGroupDetailView> {
       actions: <BottomSheetAction>[
         BottomSheetAction(title: const Text('신고하기'), onPressed: (context) {}),
       ],
-      cancelAction: CancelAction(title: const Text('Cancel')),// onPressed parameter is optional by default will dismiss the ActionSheet
+      cancelAction: CancelAction(
+          title: const Text(
+              'Cancel')), // onPressed parameter is optional by default will dismiss the ActionSheet
     );
   }
 }

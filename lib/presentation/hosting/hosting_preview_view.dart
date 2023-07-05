@@ -62,15 +62,13 @@ class _HostingPreviewView extends State<HostingPreviewView> {
                     print('Page changed: $value');
                     setState(() {
                       _currentImageNumber++;
-                      if(_currentImageNumber > _totalImageNumber)
-                        {
-                          _currentImageNumber = 1;
-                        }
+                      if (_currentImageNumber > _totalImageNumber) {
+                        _currentImageNumber = 1;
+                      }
                       _imageNumber = '$_currentImageNumber/$_totalImageNumber';
                     });
                   },
                   autoPlayInterval: 3000,
-
                   isLoop: true,
                   children: [
                     Image.asset(
@@ -121,7 +119,7 @@ class _HostingPreviewView extends State<HostingPreviewView> {
                       foregroundColor: Colors.white,
                       minimumSize: Size(80, 10),
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(20),
                       ),
                       backgroundColor: Palette.valueRed),
                   child: const Text(
@@ -232,7 +230,7 @@ class _HostingPreviewView extends State<HostingPreviewView> {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   image: DecorationImage(
-                      image: AssetImage('assets/image/female.jpg'),
+                      image: AssetImage('assets/images/female.jpg'),
                       fit: BoxFit.fitHeight),
                 ),
               ),
@@ -293,7 +291,7 @@ class _HostingPreviewView extends State<HostingPreviewView> {
                           height: 20,
                           child: CircleAvatar(
                             backgroundImage:
-                                AssetImage('assets/image/landing_page.png'),
+                                AssetImage('assets/images/landing_page.png'),
                           ),
                         ),
                         SizedBox(
@@ -301,7 +299,7 @@ class _HostingPreviewView extends State<HostingPreviewView> {
                           height: 20,
                           child: CircleAvatar(
                             backgroundImage:
-                                AssetImage('assets/image/landing_page.png'),
+                                AssetImage('assets/images/landing_page.png'),
                           ),
                         ),
                         SizedBox(
@@ -309,7 +307,7 @@ class _HostingPreviewView extends State<HostingPreviewView> {
                           height: 20,
                           child: CircleAvatar(
                             backgroundImage:
-                                AssetImage('assets/image/landing_page.png'),
+                                AssetImage('assets/images/landing_page.png'),
                           ),
                         ),
                       ],
@@ -337,7 +335,7 @@ class _HostingPreviewView extends State<HostingPreviewView> {
                           height: 20,
                           child: CircleAvatar(
                             backgroundImage:
-                                AssetImage('assets/image/landing_page.png'),
+                                AssetImage('assets/images/landing_page.png'),
                           ),
                         ),
                         SizedBox(
@@ -345,7 +343,7 @@ class _HostingPreviewView extends State<HostingPreviewView> {
                           height: 20,
                           child: CircleAvatar(
                             backgroundImage:
-                                AssetImage('assets/image/landing_page.png'),
+                                AssetImage('assets/images/landing_page.png'),
                           ),
                         ),
                         SizedBox(
@@ -353,7 +351,7 @@ class _HostingPreviewView extends State<HostingPreviewView> {
                           height: 20,
                           child: CircleAvatar(
                             backgroundImage:
-                                AssetImage('assets/image/landing_page.png'),
+                                AssetImage('assets/images/landing_page.png'),
                           ),
                         ),
                       ],
@@ -435,23 +433,23 @@ class _HostingPreviewView extends State<HostingPreviewView> {
               width: MediaQuery.of(context).size.width,
               alignment: Alignment.center,
               child: TextButton(
-                  style: TextButton.styleFrom(
-                      foregroundColor: Colors.white,
-                      minimumSize: Size(200, 30),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20)),
-                      backgroundColor: Palette.valueRed),
-                  child: const Text('게시하기'),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) {
-                          return HomeView();
-                        },
-                      ),
-                    );
-                  },
+                style: TextButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    minimumSize: Size(200, 30),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20)),
+                    backgroundColor: Palette.valueRed),
+                child: const Text('게시하기'),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return HomeView();
+                      },
+                    ),
+                  );
+                },
               ),
             ),
           ),

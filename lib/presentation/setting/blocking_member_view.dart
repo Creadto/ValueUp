@@ -10,7 +10,6 @@ class BlockingMemberView extends StatefulWidget {
 }
 
 class _BlockingMemberView extends State<BlockingMemberView> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,7 +77,7 @@ class _BlockingMemberView extends State<BlockingMemberView> {
                         ),
                         shape: BoxShape.circle,
                         image: DecorationImage(
-                            image: AssetImage('assets/image/female.jpg'),
+                            image: AssetImage('assets/images/female.jpg'),
                             fit: BoxFit.fitHeight),
                       ),
                     ),
@@ -122,9 +121,7 @@ class _BlockingMemberView extends State<BlockingMemberView> {
                         color: Colors.white,
                       ),
                     ),
-                    onPressed: () {
-
-                    },
+                    onPressed: () {},
                   ),
                   SizedBox(
                     width: 5,
@@ -160,7 +157,7 @@ class _BlockingMemberView extends State<BlockingMemberView> {
                         ),
                         shape: BoxShape.circle,
                         image: DecorationImage(
-                            image: AssetImage('assets/image/female.jpg'),
+                            image: AssetImage('assets/images/female.jpg'),
                             fit: BoxFit.fitHeight),
                       ),
                     ),
@@ -204,9 +201,7 @@ class _BlockingMemberView extends State<BlockingMemberView> {
                         color: Colors.white,
                       ),
                     ),
-                    onPressed: () {
-
-                    },
+                    onPressed: () {},
                   ),
                   SizedBox(
                     width: 5,

@@ -46,7 +46,7 @@ class _ProfileAlertDialogState extends State<ProfileAlertDialog> {
                     alignment: Alignment.center,
                     width: MediaQuery.of(context).size.width,
                     height: 100,
-                    child: Image.asset('assets/image/welcome.png')),
+                    child: Image.asset('assets/images/welcome.png')),
               ],
             ),
           ],
