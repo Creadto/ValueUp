@@ -1,4 +1,4 @@
-package com.example.value_up
+package com.creadto.gachiga
 
 import io.flutter.embedding.android.FlutterActivity
 
